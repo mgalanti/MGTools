@@ -1,0 +1,6 @@
+<use   name="root"/>
+<use   name="rootgraphics"/>
+<use   name="MGTools/PlottingTools"/>
+<environment>
+  <bin   file="runHistogramComparator.cc" name="runHistogramComparator"></bin>
+</environment>
