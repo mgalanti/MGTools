@@ -1,0 +1,7 @@
+<use   name="root"/>
+<use   name="rootgraphics"/>
+<export>
+  <use   name="root"/>
+  <use   name="rootgraphics"/>
+  <lib   name="1"/>
+</export>
