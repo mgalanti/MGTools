@@ -174,7 +174,7 @@ void HistogramComparator::CompareHistogram(std::string histoName)
   }
 
   std::string legendTitle = histosToCompare.at(0)->GetTitle();
-  LegendDefinition leg = {legendTitle, legendLabels, "NW"};
+  LegendDefinition leg = {legendTitle, legendLabels, "NE"};
 
   if(!canvasTitle.empty())
     CreateAndWriteCanvasWithRatios(cName.c_str(), canvasTitle.c_str(), lineStyles, markerStyles, colors, leg, false, false, histosToCompare);
@@ -224,7 +224,7 @@ void HistogramComparator::CompareGraph(std::string graphName)
   }
   
   std::string legendTitle = graphsToCompare.at(0)->GetTitle();
-  LegendDefinition leg = {legendTitle, legendLabels, "NW"};
+  LegendDefinition leg = {legendTitle, legendLabels, "NE"};
   
 //   if(!canvasTitle.empty())
 //     CreateAndWriteCanvas(cName.c_str(), canvasTitle.c_str(), markerStyles, colors, leg, false, true, graphsToCompare);
@@ -285,7 +285,7 @@ void HistogramComparator::CompareHistogram(std::vector<std::string> histoNames)
   }
   
   std::string legendTitle = histosToCompare.at(0)->GetTitle();
-  LegendDefinition leg = {legendTitle, legendLabels, "NW"};
+  LegendDefinition leg = {legendTitle, legendLabels, "NE"};
   
   if(!canvasTitle.empty())
     CreateAndWriteCanvasWithDifferences(cName.c_str(), canvasTitle.c_str(), lineStyles, markerStyles, colors, leg, false, false, histosToCompare);
